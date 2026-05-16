@@ -9,8 +9,8 @@ export const personal = {
   email: 'kumarsaurabhsingh475@gmail.com',
   phone: '+91 79922 12983',
   location: 'Noida, India',
-  linkedin: 'https://www.linkedin.com/in/saurabh-kumar',
-  github: 'https://github.com/saurabhkumar',
+  linkedin: 'https://www.linkedin.com/in/saurabh-kumar-62767a191/',
+  github: 'https://github.com/kumarsaurabhsingh475-cloud',
   /** Google Drive resume — direct download */
   resumeDownloadUrl:
     'https://drive.google.com/uc?export=download&id=1FmHc3wIDWCocm6wSJnWk__bx1ldPNkg5',
