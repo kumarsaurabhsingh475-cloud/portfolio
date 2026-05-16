@@ -57,7 +57,7 @@ export default function About() {
                         {topic.name}
                       </span>
                     ))}
-                  </motion.div>
+                  </div>
                 </motion.div>
               )}
             </GlassCard>
