@@ -89,9 +89,12 @@ saurabh-portfolio/
 
 1. Push the repo to GitHub.
 2. Import project on [vercel.com](https://vercel.com).
-3. Framework preset: **Vite**
+3. Framework preset: **Vite** (or leave auto-detect — `vercel.json` is included).
 4. Build command: `npm run build`
 5. Output directory: `dist`
+6. Node.js: **18.x or 20.x** (`.nvmrc` sets 20)
+
+If the build fails, open the Vercel log and expand the `npm run build` step — copy the red error lines. Common fix: redeploy after `npm run build` passes locally.
 
 ### Netlify
 
