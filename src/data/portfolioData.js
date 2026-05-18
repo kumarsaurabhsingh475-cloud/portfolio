@@ -4,7 +4,7 @@
 
 export const personal = {
   name: 'Saurabh Kumar',
-  title: 'Java Backend Developer',
+  title: 'Java Backend Engineer',
   tagline: 'Building scalable, production-grade backend systems',
   email: 'kumarsaurabhsingh475@gmail.com',
   phone: '+91 79922 12983',
@@ -19,18 +19,20 @@ export const personal = {
     'https://drive.google.com/file/d/1FmHc3wIDWCocm6wSJnWk__bx1ldPNkg5/view?usp=sharing',
   profileImage: '/profile.png',
   typingRoles: [
-    'Spring Boot APIs',
-    'Query Optimization',
-    'OAuth & Google Login',
-    'Swagger / OpenAPI',
-    'SaaS Backends',
+    'Spring Boot Microservices',
+    'Scalable Backend Systems',
+    'High-Performance APIs',
+    'GraphQL & REST APIs',
+    'RBAC & OAuth Security',
+    'SaaS Platform Development',
   ],
 };
 
 export const about = {
-  summary: `Java Backend Developer with 2.5 years of experience designing and building scalable, high-performance backend systems using Java (8/11/21), Spring Boot, Spring Security, REST APIs, GraphQL, and SQL databases (MySQL, PostgreSQL). Experienced with multithreading, Swagger/OpenAPI documentation, Firebase integrations, and OAuth 2.0 flows including Google sign-in.`,
+  summary: `Building scalable SaaS backends using Java, Spring Boot, REST APIs, GraphQL, and PostgreSQL — with hands-on AWS integration (S3, SES, RDS) for storage, email delivery, and managed relational data in production.`,
   specialization: [
     'SQL query optimization — indexing, joins, and N+1 fixes (up to 80–90% faster responses)',
+    'AWS S3, SES & RDS for cloud-native file storage, email, and database workloads',
     'OAuth 2.0 & Google login with Spring Security',
     'Microservices architecture & Swagger/OpenAPI-first API design',
     'Multithreading & concurrent processing for high-throughput backends',
@@ -44,6 +46,7 @@ export const about = {
     { name: 'OAuth 2.0', featured: false },
     { name: 'Google Sign-In', featured: false },
     { name: 'Firebase', featured: false },
+    { name: 'AWS S3 · SES · RDS', featured: false },
   ],
   passion: `I thrive on solving complex backend challenges — profiling slow queries, tuning execution plans, and delivering APIs that stay fast under load — from workflow engines and real-time dashboards to multi-wallet architectures.`,
   highlights: [
@@ -54,41 +57,72 @@ export const about = {
   ],
 };
 
-export const skills = {
-  backend: [
-    { name: 'Java (8/11/21)', level: 92 },
-    { name: 'Spring Boot', level: 90 },
-    { name: 'Spring Security', level: 85 },
-    { name: 'REST APIs', level: 92 },
-    { name: 'GraphQL', level: 80 },
-    { name: 'JUnit / Mockito', level: 70 },
-  ],
-  frontend: [
-    { name: 'JavaScript', level: 48 },
-    { name: 'Angular', level: 42 },
-    { name: 'React', level: 45 },
-    { name: 'HTML / CSS', level: 50 },
-  ],
-  database: [
-    { name: 'MySQL', level: 88 },
-    { name: 'PostgreSQL', level: 85 },
-    { name: 'Redis', level: 45 },
-    { name: 'Elasticsearch', level: 40 },
-  ],
-  cloud: [
-    { name: 'AWS S3', level: 75 },
-    { name: 'AWS SES', level: 72 },
-    { name: 'DynamoDB', level: 45 },
-    { name: 'Microservices', level: 65 },
-  ],
-  tools: [
-    { name: 'Git / GitHub', level: 90 },
-    { name: 'Bitbucket', level: 85 },
-    { name: 'Jira', level: 80 },
-    { name: 'Maven / Gradle', level: 85 },
-    { name: 'Postman / Swagger', level: 88 },
-    { name: 'IntelliJ IDEA', level: 92 },
-  ],
+/** AWS services — featured strip in Skills section */
+export const awsServices = [
+  {
+    id: 's3',
+    name: 'Amazon S3',
+    role: 'Object storage & static assets',
+    detail: 'Buckets, uploads, and production file workflows',
+  },
+  {
+    id: 'ses',
+    name: 'Amazon SES',
+    role: 'Transactional email',
+    detail: 'Campaigns, notifications, and deliverability at scale',
+  },
+  {
+    id: 'rds',
+    name: 'Amazon RDS',
+    role: 'Managed relational databases',
+    detail: 'MySQL / PostgreSQL workloads with operational reliability',
+  },
+];
+
+/** Skill categories — badge chips only (no percentages) */
+export const skillCategories = {
+  backend: {
+    label: 'Backend Engineering',
+    tagline: 'JVM, APIs & platform core',
+    items: [
+      'Java 8 / 11 / 21',
+      'Spring Boot',
+      'Spring Security',
+      'REST APIs',
+      'GraphQL',
+      'JUnit & Mockito',
+      'Multithreading',
+      'Swagger / OpenAPI',
+    ],
+  },
+  database: {
+    label: 'Data & Persistence',
+    tagline: 'SQL, caching & search',
+    items: ['MySQL', 'PostgreSQL', 'Redis', 'Elasticsearch', 'Query Optimization'],
+  },
+  cloud: {
+    label: 'Cloud & Architecture',
+    tagline: 'AWS & distributed systems',
+    items: ['AWS S3', 'AWS SES', 'AWS RDS', 'Microservices', 'DynamoDB', 'OAuth 2.0'],
+  },
+  frontend: {
+    label: 'Frontend (supporting)',
+    tagline: 'Integration & UI collaboration',
+    items: ['JavaScript', 'Angular', 'React', 'HTML / CSS'],
+  },
+  tools: {
+    label: 'Engineering Toolkit',
+    tagline: 'Delivery & collaboration',
+    items: [
+      'Git / GitHub',
+      'Bitbucket',
+      'Jira',
+      'Maven / Gradle',
+      'Postman',
+      'IntelliJ IDEA',
+      'Firebase',
+    ],
+  },
 };
 
 export const experience = [
@@ -102,6 +136,7 @@ export const experience = [
     tech: [
       'Java 11/17/21',
       'Spring Boot',
+      'AWS S3 · SES · RDS',
       'OAuth / Google',
       'Swagger',
       'Firebase',

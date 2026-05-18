@@ -8,7 +8,7 @@ Production-ready personal portfolio for a **Java Backend Developer**, built with
 - Resume-driven content (`src/data/portfolioData.js`)
 - Sticky navbar with scroll spy & mobile menu
 - Hero with typing effect & profile image
-- Skills with animated progress bars
+- Skills with animated tech badges and AWS service cards
 - Experience vertical timeline
 - Project cards with hover tilt & glow
 - Contact form (mailto integration)
@@ -69,7 +69,7 @@ saurabh-portfolio/
 │   ├── components/
 │   │   ├── effects/        # Particles, blobs, cursor, loader
 │   │   ├── layout/         # Navbar, Footer, ScrollToTop
-│   │   └── ui/             # Button, GlassCard, SkillBar, etc.
+│   │   └── ui/             # Button, GlassCard, SectionHeading, etc.
 │   ├── data/               # Resume content (single source of truth)
 │   ├── hooks/              # useScrollSpy, useTypingEffect, useMediaQuery
 │   ├── sections/           # Page sections (Hero, About, …)
