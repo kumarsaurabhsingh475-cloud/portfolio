@@ -77,7 +77,7 @@ export default function Hero() {
             </div>
           </motion.div>
           <motion.div
-            className="glass absolute -bottom-4 -left-4 hidden rounded-xl px-4 py-3 font-mono text-xs sm:block"
+            className="glass absolute -bottom-4 -left-4 rounded-xl px-4 py-3 font-mono text-xs sm:block"
             animate={{ y: [0, 6, 0] }}
             transition={{ duration: 3, repeat: Infinity }}
           >
