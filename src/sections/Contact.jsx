@@ -33,8 +33,8 @@ export default function Contact() {
       <motion.div className="section-padding">
         <SectionHeading
           tag="Contact"
-          title="Let's Build Something"
-          subtitle="Open to backend roles, collaborations, and interesting technical challenges."
+          title="Get in Touch"
+          subtitle="Open to backend roles, collaborations, and tough problems worth solving."
         />
 
         <motion.div className="grid gap-10 lg:grid-cols-5">

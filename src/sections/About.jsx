@@ -11,8 +11,8 @@ export default function About() {
       <div className="section-padding">
         <SectionHeading
           tag="About Me"
-          title="Backend Engineer with Impact"
-          subtitle="Passionate about scalable systems, clean APIs, and shipping features that matter."
+          title="About My Work"
+          subtitle="I like systems that scale, APIs people can actually use, and shipping fixes that stick."
         />
 
         <div className="grid gap-8 lg:grid-cols-5">

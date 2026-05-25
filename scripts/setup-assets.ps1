@@ -30,3 +30,24 @@ foreach ($p in $ProfileCandidates) {
 if (-not $copied) {
   Write-Warning "Add your headshot as public/profile.png (use the photo you uploaded for this project)"
 }
+
+$ProjectBanners = @(
+  @{ Source = "d:\Personal\WorkED.svg"; Dest = "WorkED.svg" },
+  @{ Source = "d:\Personal\zep360.svg"; Dest = "zep360.svg" },
+  @{ Source = "d:\Personal\operations-hub.png"; Dest = "operations-hub.png" },
+  @{ Source = "d:\Personal\WorkED-ops.png"; Dest = "operations-hub.png" },
+  @{ Source = "d:\Personal\inn4smart.png"; Dest = "inn4smart.png" },
+  @{ Source = "d:\Personal\Inn4Smart.png"; Dest = "inn4smart.png" }
+)
+foreach ($banner in $ProjectBanners) {
+  if (Test-Path $banner.Source) {
+    Copy-Item $banner.Source (Join-Path $Public $banner.Dest) -Force
+    Write-Host "Copied project banner $($banner.Dest)"
+  }
+}
+
+if (Test-Path (Join-Path $ProjectRoot "package.json")) {
+  Push-Location $ProjectRoot
+  npm run banners:prepare 2>$null
+  Pop-Location
+}

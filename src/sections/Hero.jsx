@@ -36,10 +36,10 @@ export default function Hero() {
             />
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-text/70 md:text-lg">
-            {personal.tagline}. I craft scalable backends with Java, Spring Boot, OAuth/Google
-            login, and Swagger-documented APIs — with a strong focus on{' '}
-            <span className="font-medium text-accent">SQL query optimization</span> for
-            production performance.
+            {personal.tagline}. I work in Java and Spring Boot, ship OAuth/Google login and
+            Swagger-documented APIs, and spend a lot of time on{' '}
+            <span className="font-medium text-accent">SQL query optimization</span> so features
+            stay fast after they go live.
           </p>
           <motion.div className="mt-8 flex flex-wrap gap-4" variants={fadeUp}>
             <Button href={personal.resumeDownloadUrl} icon={FiDownload}>
@@ -61,11 +61,11 @@ export default function Hero() {
           <motion.div className="relative" variants={floatAnimation} animate="animate">
             {/* gradient frame */}
             <div className="rounded-3xl bg-gradient-to-br from-accent via-secondary to-accent p-[3px] shadow-2xl shadow-accent/20">
-              <div className="overflow-hidden rounded-[1.35rem] bg-bg p-2">
+              <div className="flex items-center justify-center overflow-hidden rounded-[1.35rem] bg-bg p-3">
                 <img
                   src={personal.profileImage}
-                  alt={`${personal.name} — ${personal.title}`}
-                  className="h-72 w-72 rounded-2xl object-cover object-top sm:h-80 sm:w-80 lg:h-96 lg:w-96"
+                  alt={`${personal.name}, ${personal.title}`}
+                  className="h-72 w-72 rounded-2xl object-contain object-center sm:h-80 sm:w-80 lg:h-96 lg:w-96"
                   loading="eager"
                   width={384}
                   height={384}

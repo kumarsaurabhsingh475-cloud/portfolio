@@ -13,7 +13,7 @@ export default function Resume() {
         <SectionHeading
           tag="Resume"
           title="Download My Resume"
-          subtitle="Full details on experience, skills, and academics — ready to share with recruiters."
+          subtitle="Experience, skills, and education in one file, ready to send to recruiters."
         />
 
         <motion.div
@@ -31,7 +31,7 @@ export default function Resume() {
               <FiFileText className="text-4xl text-accent" />
             </motion.div>
             <h3 className="font-display text-xl font-bold text-white">
-              {personal.name} — Resume
+              {personal.name}, Resume
             </h3>
             <p className="mt-2 text-text/70">
               Java Backend Developer · 2.5 years · Spring Boot · Microservices · SaaS

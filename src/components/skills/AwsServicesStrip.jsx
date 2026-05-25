@@ -26,7 +26,7 @@ export default function AwsServicesStrip() {
           <FaAws className="text-lg" aria-hidden />
           AWS Production Stack
         </span>
-        <span className="text-sm text-text/60">Cloud services used in live SaaS delivery</span>
+        <span className="text-sm text-text/60">AWS services I use on live SaaS products</span>
       </motion.div>
 
       <motion.div

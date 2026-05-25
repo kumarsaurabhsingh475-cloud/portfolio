@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "banners:prepare": "node scripts/convert-banner-png.mjs",
+    "inn4smart:logo": "node scripts/process-inn4smart-sharp.mjs"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -29,6 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.0.0",
     "postcss": "^8.5.3",
+    "sharp": "^0.34.2",
     "tailwindcss": "^3.4.17",
     "vite": "^6.3.5"
   }

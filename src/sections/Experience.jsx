@@ -10,7 +10,7 @@ export default function Experience() {
         <SectionHeading
           tag="Experience"
           title="Professional Journey"
-          subtitle="Building enterprise SaaS backends across EdTech, solar EPC, and smart society platforms."
+          subtitle="SaaS backend work across EdTech, solar EPC, and smart society products at Drabito."
         />
 
         {experience.map((job) => (

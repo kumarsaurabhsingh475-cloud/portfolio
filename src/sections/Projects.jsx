@@ -11,7 +11,7 @@ export default function Projects() {
         <SectionHeading
           tag="Projects"
           title="Featured Work"
-          subtitle="Production systems I've helped design and ship — from EdTech to smart society SaaS."
+          subtitle="Products I've helped build and ship, from EdTech to smart society SaaS."
         />
 
         <motion.div

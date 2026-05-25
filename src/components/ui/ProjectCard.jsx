@@ -1,9 +1,36 @@
 import { motion } from 'framer-motion';
+import { useMemo, useState } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 import { fadeUp } from '../../animations/variants';
 
+function buildBannerSources(project) {
+  const list = [
+    project.bannerImage,
+    ...(project.bannerSources ?? []),
+    project.bannerFallback,
+  ].filter(Boolean);
+  return [...new Set(list)];
+}
+
+/** Fixed box — logos scale UP to fill it (max-* alone does not enlarge small SVGs) */
+const LOGO_BOX = {
+  'brand-wide': { height: '5.5rem', width: '90%' },
+  compact: { height: '5.5rem', width: '78%' },
+  emblem: { height: '5.5rem', width: '90%' },
+};
+
 export default function ProjectCard({ project, index }) {
   const hasAppUrl = project.appUrl && project.appUrl !== '#';
+  const sources = useMemo(() => buildBannerSources(project), [project]);
+  const [sourceIndex, setSourceIndex] = useState(0);
+  const bannerFailed = sourceIndex >= sources.length;
+  const activeSrc = sources[sourceIndex];
+  const logoProfile = project.bannerLogoProfile ?? 'brand-wide';
+  const logoBox = LOGO_BOX[logoProfile] ?? LOGO_BOX['brand-wide'];
+
+  const handleBannerError = () => {
+    setSourceIndex((i) => i + 1);
+  };
 
   return (
     <motion.article
@@ -21,19 +48,41 @@ export default function ProjectCard({ project, index }) {
       }}
       style={{ transformStyle: 'preserve-3d', perspective: 1000 }}
     >
-      <motion.div
-        className={`relative h-44 bg-gradient-to-br ${project.gradient} flex items-center justify-center overflow-hidden`}
+      <div
+        className={`relative flex h-48 items-center justify-center overflow-hidden border-b border-white/10 bg-bg/90 sm:h-52 ${
+          !bannerFailed ? '' : `bg-gradient-to-br ${project.gradient}`
+        }`}
       >
-        <motion.div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(56,189,248,0.15),transparent_50%)]" />
-        <span className="font-mono text-5xl font-bold text-white/10">{project.title.charAt(0)}</span>
-        <motion.div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-gradient-to-t from-bg/80 to-transparent" />
-      </motion.div>
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(56,189,248,0.12),transparent_55%)]" />
 
-      <motion.div className="flex flex-1 flex-col p-6">
+        {!bannerFailed ? (
+          <div
+            className="relative z-10 flex shrink-0 items-center justify-center transition duration-300 group-hover:scale-[1.02]"
+            style={{ height: logoBox.height, width: logoBox.width, maxWidth: '20rem' }}
+          >
+            <img
+              key={activeSrc}
+              src={activeSrc}
+              alt={`${project.title} logo`}
+              className="h-full w-full object-contain object-center"
+              loading="lazy"
+              onError={handleBannerError}
+            />
+          </div>
+        ) : (
+          <span className="relative z-10 font-mono text-5xl font-bold text-white/10">
+            {project.title.charAt(0)}
+          </span>
+        )}
+
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/70 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      </div>
+
+      <div className="flex flex-1 flex-col p-6">
         <h3 className="font-display text-xl font-bold text-white">{project.title}</h3>
         <p className="mt-1 text-sm text-accent/90">{project.subtitle}</p>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-text/70">{project.description}</p>
-        <motion.div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2">
           {project.tech.map((t) => (
             <span
               key={t}
@@ -42,7 +91,7 @@ export default function ProjectCard({ project, index }) {
               {t}
             </span>
           ))}
-        </motion.div>
+        </div>
         {hasAppUrl && (
           <motion.a
             href={project.appUrl}
@@ -57,7 +106,7 @@ export default function ProjectCard({ project, index }) {
             Open App
           </motion.a>
         )}
-      </motion.div>
+      </div>
     </motion.article>
   );
 }

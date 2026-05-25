@@ -44,7 +44,7 @@ export default function Skills() {
         <SectionHeading
           tag="Tech Stack"
           title="Engineering Stack"
-          subtitle="Production backend systems — JVM services, data layers, AWS cloud primitives, and the tooling that ships reliable SaaS."
+          subtitle="The JVM stack, data layer, AWS services, and tools I use day to day on production SaaS."
         />
 
         <AwsServicesStrip />
@@ -93,8 +93,8 @@ export default function Skills() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Depth over buzzwords — backend-first delivery with supporting frontend integration,
-          AWS-managed infrastructure patterns, and a focus on performance in production.
+          I list what I actually work with: backend first, enough frontend to integrate cleanly,
+          and performance that still matters after release.
         </motion.p>
       </motion.div>
     </section>

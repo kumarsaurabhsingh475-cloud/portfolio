@@ -1,4 +1,4 @@
-# Run after pulling CSS fix — reinstalls Tailwind v3 + PostCSS
+# Run after pulling CSS fix. Reinstalls Tailwind v3 + PostCSS.
 $root = Split-Path $PSScriptRoot -Parent
 Set-Location $root
 

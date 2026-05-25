@@ -1,4 +1,4 @@
-# Saurabh Kumar — Portfolio
+# Saurabh Kumar | Portfolio
 
 Production-ready personal portfolio for a **Java Backend Developer**, built with React, Vite, Tailwind CSS v4, and Framer Motion.
 
@@ -36,8 +36,9 @@ Copy your resume PDF and profile photo:
 
 Or manually:
 
-- `public/resume.pdf` — from `d:\Personal\Saurabh_Kumar_Java_2.5YOE.pdf`
-- `public/profile.png` — your headshot (the orange-background photo you provided)
+- `public/resume.pdf`: copy from `d:\Personal\Saurabh_Kumar_Java_2.5YOE.pdf`
+- `public/profile.png`: your headshot (the orange-background photo you provided)
+- Project banners in `public/`: `WorkED.svg`, `zep360.svg`, `operations-hub.png`, `inn4smart.png` (then run `npm run banners:prepare` to build `inn4smart.svg`)
 
 ### 3. Update social links
 
@@ -89,12 +90,12 @@ saurabh-portfolio/
 
 1. Push the repo to GitHub.
 2. Import project on [vercel.com](https://vercel.com).
-3. Framework preset: **Vite** (or leave auto-detect — `vercel.json` is included).
+3. Framework preset: **Vite** (or leave auto-detect; `vercel.json` is included).
 4. Build command: `npm run build`
 5. Output directory: `dist`
 6. Node.js: **18.x or 20.x** (`.nvmrc` sets 20)
 
-If the build fails, open the Vercel log and expand the `npm run build` step — copy the red error lines. Common fix: redeploy after `npm run build` passes locally.
+If the build fails, open the Vercel log and expand the `npm run build` step, then copy the red error lines. Common fix: redeploy after `npm run build` passes locally.
 
 ### Netlify
 
@@ -106,7 +107,7 @@ If the build fails, open the Vercel log and expand the `npm run build` step — 
 
 ## Environment Variables
 
-Optional — create `.env` for contact form services later:
+Optional: create `.env` for contact form services later:
 
 ```env
 VITE_CONTACT_ENDPOINT=
@@ -133,4 +134,4 @@ The default contact form uses `mailto:` (no backend required).
 
 ---
 
-Built for **Saurabh Kumar** — Java Backend Developer @ Drabito Technologies.
+Built for **Saurabh Kumar**, Java Backend Developer at Drabito Technologies.

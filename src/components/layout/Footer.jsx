@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-10 text-center font-mono text-xs text-text/40">
-          © {year} {personal.name}. Crafted with React & Spring spirit.
+          © {year} {personal.name}. Built with React and Vite.
         </p>
       </div>
     </footer>
