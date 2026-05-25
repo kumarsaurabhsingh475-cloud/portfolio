@@ -36,10 +36,16 @@ export default function Hero() {
             />
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-text/70 md:text-lg">
-            {personal.tagline}. I work in Java and Spring Boot, ship OAuth/Google login and
-            Swagger-documented APIs, and spend a lot of time on{' '}
-            <span className="font-medium text-accent">SQL query optimization</span> so features
-            stay fast after they go live.
+            I build scalable <span className="font-medium text-accent">SaaS backends</span> with{' '}
+            <span className="font-medium text-accent">Java and Spring Boot</span> for real production
+            workloads, including a{' '}
+            <span className="font-medium text-accent">Quartz-powered workflow engine</span> that
+            automates <span className="font-medium text-accent">email and SMS automation</span> with{' '}
+            <span className="font-medium text-accent">high time precision</span>. I also use{' '}
+            <span className="font-medium text-accent">Redis caching</span> and{' '}
+            <span className="font-medium text-accent">Elasticsearch</span> to keep APIs and search
+            fast, reducing response times{' '}
+            <span className="font-medium text-accent">by up to 90%</span> through query tuning.
           </p>
           <motion.div className="mt-8 flex flex-wrap gap-4" variants={fadeUp}>
             <Button href={personal.resumeDownloadUrl} icon={FiDownload}>

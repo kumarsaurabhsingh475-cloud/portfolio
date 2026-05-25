@@ -34,7 +34,7 @@ export default function Resume() {
               {personal.name}, Resume
             </h3>
             <p className="mt-2 text-text/70">
-              Java Backend Developer · 2.5 years · Spring Boot · Microservices · SaaS
+              Java Backend Engineer · 2.5 years · Spring Boot · Microservices · SaaS
             </p>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
               <Button href={personal.resumeDownloadUrl} icon={FiDownload}>

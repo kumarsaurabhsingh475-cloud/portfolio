@@ -5,7 +5,7 @@
 export const personal = {
   name: 'Saurabh Kumar',
   title: 'Java Backend Engineer',
-  tagline: 'I build backend systems meant for real production load',
+  tagline: 'Production Java backends, precise workflows, APIs that stay fast',
   email: 'kumarsaurabhsingh475@gmail.com',
   phone: '+91 79922 12983',
   location: 'Noida, India',
