@@ -60,16 +60,15 @@ export default function Skills() {
             <motion.div
               key={id}
               className="group flex flex-col items-center gap-2"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.04 }}
-              whileHover={{ y: -6 }}
+              transition={{ duration: 0.35, delay: i * 0.04 }}
             >
-              <span className="glass flex h-12 w-12 items-center justify-center rounded-xl text-xl text-text/70 transition duration-300 group-hover:border-accent/30 group-hover:text-accent group-hover:shadow-[0_0_24px_rgba(56,189,248,0.25)]">
+              <span className="glass flex h-12 w-12 items-center justify-center rounded-xl text-xl text-text/70 transition-[transform,color,box-shadow,border-color] duration-200 ease-out will-change-transform group-hover:-translate-y-2 group-hover:border-accent/30 group-hover:text-accent group-hover:shadow-[0_0_24px_rgba(56,189,248,0.25)]">
                 <Icon aria-hidden />
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-wider text-text/45 group-hover:text-text/70">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-text/45 transition-colors duration-200 group-hover:text-text/70">
                 {label}
               </span>
             </motion.div>
