@@ -50,7 +50,7 @@ export const about = {
   ],
   passion: `Most of what I enjoy is the unglamorous side of backend work: profiling slow queries, tuning execution plans, and keeping APIs quick under load. That shows up in workflow engines, live dashboards, and multi-wallet systems alike.`,
   highlights: [
-    { label: 'Experience', value: '2.5 Years' },
+    { label: 'Experience', value: '3 Years' },
     { label: 'Projects Delivered', value: '4+' },
     { label: 'API Performance', value: 'Up to 90%' },
     { label: 'Client Recognition', value: '2×' },
