@@ -11,12 +11,21 @@ export const personal = {
   location: 'Noida, India',
   linkedin: 'https://www.linkedin.com/in/saurabh-kumar-62767a191/',
   github: 'https://github.com/kumarsaurabhsingh475-cloud',
+  // /** Google Drive resume (direct download) */
+  // resumeDownloadUrl:
+  //   'https://drive.google.com/uc?export=download&id=1FmHc3wIDWCocm6wSJnWk__bx1ldPNkg5',
+  // /** Google Drive resume (view in browser) */
+  // resumeViewUrl:
+  //   'https://drive.google.com/file/d/1FmHc3wIDWCocm6wSJnWk__bx1ldPNkg5/view?usp=sharing',
+
   /** Google Drive resume (direct download) */
   resumeDownloadUrl:
-    'https://drive.google.com/uc?export=download&id=1FmHc3wIDWCocm6wSJnWk__bx1ldPNkg5',
+    'https://drive.google.com/uc?export=download&id=1LMO0ckGTVG97oumAEuHCy_kc7j1z0P8p',
+
   /** Google Drive resume (view in browser) */
   resumeViewUrl:
-    'https://drive.google.com/file/d/1FmHc3wIDWCocm6wSJnWk__bx1ldPNkg5/view?usp=sharing',
+    'https://drive.google.com/file/d/1LMO0ckGTVG97oumAEuHCy_kc7j1z0P8p/view?usp=sharing',
+
   profileImage: '/profile.png',
   typingRoles: [
     'Spring Boot Microservices',
