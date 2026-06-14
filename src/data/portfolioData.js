@@ -19,13 +19,12 @@ export const personal = {
   //   'https://drive.google.com/file/d/1FmHc3wIDWCocm6wSJnWk__bx1ldPNkg5/view?usp=sharing',
 
   /** Google Drive resume (direct download) */
-  resumeDownloadUrl:
-    'https://drive.google.com/uc?export=download&id=1LMO0ckGTVG97oumAEuHCy_kc7j1z0P8p',
+resumeDownloadUrl:
+  'https://drive.google.com/uc?export=download&id=1RTH7UqAKxfuG6PYCjYmPGNQMEDR2NytP',
 
-  /** Google Drive resume (view in browser) */
-  resumeViewUrl:
-    'https://drive.google.com/file/d/1LMO0ckGTVG97oumAEuHCy_kc7j1z0P8p/view?usp=sharing',
-
+resumeViewUrl:
+  'https://drive.google.com/file/d/1RTH7UqAKxfuG6PYCjYmPGNQMEDR2NytP/view?usp=sharing',
+  
   profileImage: '/profile.png',
   typingRoles: [
     'Spring Boot Microservices',
