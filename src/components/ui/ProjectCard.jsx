@@ -17,6 +17,7 @@ const LOGO_BOX = {
   'brand-wide': { height: '5.5rem', width: '90%' },
   compact: { height: '5.5rem', width: '78%' },
   emblem: { height: '5.5rem', width: '90%' },
+  display: { height: '7rem', width: '95%', maxWidth: '22rem' },
 };
 
 export default function ProjectCard({ project, index }) {
@@ -58,7 +59,11 @@ export default function ProjectCard({ project, index }) {
         {!bannerFailed ? (
           <div
             className="relative z-10 flex shrink-0 items-center justify-center transition duration-300 group-hover:scale-[1.02]"
-            style={{ height: logoBox.height, width: logoBox.width, maxWidth: '20rem' }}
+            style={{
+              height: logoBox.height,
+              width: logoBox.width,
+              maxWidth: logoBox.maxWidth ?? '20rem',
+            }}
           >
             <img
               key={activeSrc}

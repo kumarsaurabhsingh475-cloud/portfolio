@@ -28,8 +28,8 @@ export default function App() {
 
   usePageMeta({
     title: `${personal.name} | ${personal.title}`,
-    description: `${personal.name}, ${personal.title}. Portfolio covering Java, Spring Boot, microservices, and SaaS backend work.`,
-    keywords: 'Java, Spring Boot, Backend Developer, REST API, GraphQL, Microservices',
+    description: `${personal.name}, ${personal.title}. Portfolio covering Java, Spring Boot, Spring AI, RAG, and SaaS backend work.`,
+    keywords: 'Java, Spring Boot, Spring AI, RAG, Backend Developer, REST API, GraphQL, Microservices, Gemini, PGVector',
   });
 
   useEffect(() => {

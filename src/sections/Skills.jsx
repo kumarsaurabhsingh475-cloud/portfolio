@@ -35,7 +35,7 @@ const stackIcons = [
   { Icon: SiIntellijidea, id: 'idea', label: 'IntelliJ' },
 ];
 
-const categoryOrder = ['backend', 'database', 'cloud', 'tools', 'frontend'];
+const categoryOrder = ['backend', 'ai', 'database', 'cloud', 'tools', 'frontend'];
 
 export default function Skills() {
   return (

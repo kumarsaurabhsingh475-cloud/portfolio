@@ -20,14 +20,15 @@ export const personal = {
 
   /** Google Drive resume (direct download) */
 resumeDownloadUrl:
-  'https://drive.google.com/uc?export=download&id=1RTH7UqAKxfuG6PYCjYmPGNQMEDR2NytP',
+  'https://drive.google.com/uc?export=download&id=1vT36A0jY45DBsAyTSQr0r2Fb9dztmMpJ',
 
 resumeViewUrl:
-  'https://drive.google.com/file/d/1RTH7UqAKxfuG6PYCjYmPGNQMEDR2NytP/view?usp=sharing',
+  'https://drive.google.com/file/d/1vT36A0jY45DBsAyTSQr0r2Fb9dztmMpJ/view?usp=sharing',
   
   profileImage: '/profile.png',
   typingRoles: [
     'Spring Boot Microservices',
+    'Spring AI & RAG',
     'Scalable Backend Systems',
     'High-Performance APIs',
     'GraphQL & REST APIs',
@@ -37,7 +38,7 @@ resumeViewUrl:
 };
 
 export const about = {
-  summary: `I build SaaS backends with Java, Spring Boot, REST and GraphQL APIs, and PostgreSQL. In production I've used AWS (S3, SES, RDS) for file storage, transactional email, and managed databases.`,
+  summary: `I build SaaS backends with Java, Spring Boot, REST and GraphQL APIs, and PostgreSQL. In production I've used AWS (S3, SES, RDS) for file storage, transactional email, and managed databases. Recently building GenAI apps with Spring AI, RAG, and PGVector.`,
   specialization: [
     'SQL tuning: indexing, join fixes, and clearing N+1s (often 80–90% faster on hot paths)',
     'AWS S3, SES, and RDS for files, email, and relational data in live apps',
@@ -45,6 +46,7 @@ export const about = {
     'Microservices and APIs documented with Swagger/OpenAPI',
     'Multithreading when throughput actually needs it',
     'RBAC, Firebase integrations, and steady Agile delivery on SaaS products',
+    'Spring AI, RAG, embeddings, and Gemini API for document Q&A',
   ],
   /** Topic chips in About (not shown as skill bars) */
   expertiseTopics: [
@@ -55,11 +57,14 @@ export const about = {
     { name: 'Google Sign-In', featured: false },
     { name: 'Firebase', featured: false },
     { name: 'AWS S3 · SES · RDS', featured: false },
+    { name: 'Spring AI', featured: true },
+    { name: 'RAG', featured: false },
+    { name: 'PGVector', featured: false },
   ],
   passion: `Most of what I enjoy is the unglamorous side of backend work: profiling slow queries, tuning execution plans, and keeping APIs quick under load. That shows up in workflow engines, live dashboards, and multi-wallet systems alike.`,
   highlights: [
-    { label: 'Experience', value: '3 Years' },
-    { label: 'Projects Delivered', value: '4+' },
+    { label: 'Experience', value: '2.6 Years' },
+    { label: 'Projects Delivered', value: '5+' },
     { label: 'API Performance', value: 'Up to 90%' },
     { label: 'Client Recognition', value: '2×' },
   ],
@@ -96,6 +101,7 @@ export const skillCategories = {
       'Java 8 / 11 / 21',
       'Spring Boot',
       'Spring Security',
+      'Spring AI',
       'REST APIs',
       'GraphQL',
       'JUnit & Mockito',
@@ -129,6 +135,19 @@ export const skillCategories = {
       'Postman',
       'IntelliJ IDEA',
       'Firebase',
+    ],
+  },
+  ai: {
+    label: 'AI & GenAI',
+    tagline: 'LLM integrations and retrieval over your own data',
+    items: [
+      'Spring AI',
+      'RAG',
+      'Google Gemini',
+      'PGVector',
+      'Embeddings',
+      'SSE Streaming',
+      'Vector Search',
     ],
   },
 };
@@ -198,6 +217,19 @@ export const experience = [
 
 export const projects = [
   {
+    id: 'documind',
+    title: 'DocuMind',
+    subtitle: 'AI Knowledge Assistant',
+    description:
+      'Upload PDFs, ask questions, and chat. Answers grounded in your documents using RAG with Spring AI and Gemini.',
+    tech: ['Spring Boot 4', 'Spring AI', 'Gemini', 'PGVector', 'React 19', 'SSE'],
+    appUrl: 'https://ai-knowledge-assistant-ui-gamma.vercel.app',
+    bannerImage: '/documind.svg',
+    bannerFit: 'contain',
+    bannerLogoProfile: 'display',
+    gradient: 'from-sky-500/20 to-indigo-600/20',
+  },
+  {
     id: 'worked',
     title: 'WorkED',
     subtitle: 'Cradle-to-Career EdTech Platform',
@@ -262,6 +294,7 @@ export const projects = [
 ];
 
 export const achievements = [
+  'Built DocuMind, a live Spring AI + RAG app with PDF ingestion, vector search, and Gemini Q&A.',
   'Client called out my WorkED Operations Hub work twice for quality and reliability.',
   'Senior leadership noted faster backend turnaround and fewer recurring support issues.',
 ];

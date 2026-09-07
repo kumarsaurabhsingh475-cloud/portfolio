@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import { FaAws } from 'react-icons/fa6';
-import { SiGit, SiPostgresql, SiReact, SiSpringboot } from 'react-icons/si';
+import { SiGit, SiGoogle, SiPostgresql, SiReact, SiSpringboot } from 'react-icons/si';
 import TechBadge from './TechBadge';
 
 const iconMap = {
   backend: { Icon: SiSpringboot, color: 'text-accent', glow: 'shadow-accent/20' },
+  ai: { Icon: SiGoogle, color: 'text-sky-400', glow: 'shadow-sky-500/20' },
   database: { Icon: SiPostgresql, color: 'text-emerald-400', glow: 'shadow-emerald-500/20' },
   cloud: { Icon: FaAws, color: 'text-amber-400', glow: 'shadow-amber-500/20' },
   frontend: { Icon: SiReact, color: 'text-secondary', glow: 'shadow-secondary/20' },
